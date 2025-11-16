@@ -144,12 +144,27 @@
         }
         .loop {
             margin: 10px 0;
-            padding: 10px;
+            padding: 15px 10px;
             border-bottom: 1px dashed rgba(255, 255, 255, 0.5);
+        }
+        .loop:last-child {
+            border-bottom: none;
         }
         .loop strong {
             color: var(--cognitio-gold);
             display: block;
+            margin-bottom: 10px;
+        }
+        .loop img {
+            width: 100%;
+            max-width: 450px;
+            display: block;
+            margin: 10px auto 0;
+            background: white;
+            padding: 5px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            height: auto; /* Ensure image scales correctly */
         }
 
         /* CTA Section */
@@ -186,6 +201,16 @@
             background-color: white;
             color: var(--cognitio-primary);
         }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .figure-grid {
+                grid-template-columns: 1fr;
+            }
+            .figure-value {
+                font-size: 2em;
+            }
+        }
     </style>
 </head>
 <body>
@@ -194,7 +219,7 @@
     <h3>SEAMLESS CARE: INTEGRATING MENTAL HEALTH</h3>
     <p style="text-align: center; font-style: italic; color: var(--cognitio-primary);">A Systems Blueprint for Transforming Mental Health into Primary Healthcare (PHC) in the Philippines</p>
 
-    <div class="chapter-title">Chapter 1: The Systemic Imperative</div>
+    <div class="chapter-title">The Systemic Imperative</div>
 
     <h4>Key Figures: The Crisis & Capacity Gap</h4>
     <div class="figure-caption">FIGURE 1: Philippines Mental Health Burden & Workforce Capacity</div>
@@ -218,13 +243,13 @@
 
     <h4>Main Insight: Barriers to Seamless Care</h4>
     <div class="insight-box">
-        The primary legislative gap is the **Over-Centralization** of resources and services in psychiatric hospitals, directly violating the spirit of RA 11036. This creates a supply-side failure where care cannot reach the local PHC/Barangay level where it is most needed.
+        The primary legislative gap is the **Over-Centralization** of resources and services in psychiatric hospitals. This creates a supply-side failure where care cannot reach the local PHC/Barangay level, directly contradicting the spirit of the Philippine Mental Health Act.
     </div>
 
     <h4>Co-Creation Strategy for Cultural Humility</h4>
     <ul>
-        <li>**Harnessing Filipino Values:** Service design must be rooted in concepts like **KAPWA** (shared identity) and **BAYANIHAN** (communal support) to overcome social **STIGMA**.</li>
-        <li>**Financial Leverage:** The recent massive funding increase (PHP 57M to 1B) must be leveraged to **decentralize** resources away from the few centralized facilities.</li>
+        <li>**Harnessing Filipino Values:** Service design must be rooted in concepts like **KAPWA** (shared identity) and **BAYANIHAN** (communal support) to overcome deep-seated social **STIGMA**.</li>
+        <li>**Financial Leverage:** Recent massive funding increases (PHP 57M to 1B) must be leveraged to **decentralize** resources and invest in community-based PHC systems.</li>
     </ul>
 
     <hr style="border-top: 1px dashed var(--cognitio-purple); margin: 30px 0;">
@@ -236,15 +261,15 @@
         <div class="chart-title">The Health Sector as a CAS: Focus on Vicious and Virtuous Cycles</div>
         <div class="loop">
             <strong>Negative (Stabilizing) Loop: Stigma-Isolation Trap</strong>
-            <p>High Stigma $\rightarrow$ No Help-Seeking $\rightarrow$ Untreated $\rightarrow$ Stigma Confirmed/Perpetuated.</p>
+            <img src="https://cognitioplus.aiwaapp.live/cache/media_cache/dcdc04f11e37a584d7a9968c60219fa7.png" alt="Stigma Isolation Trap Diagram">
         </div>
         <div class="loop">
             <strong>Negative (Stabilizing) Loop: Workforce-Burnout Trap</strong>
-            <p>Provider Scarcity $\rightarrow$ Excessive Caseloads $\rightarrow$ High Burnout/Turnover $\rightarrow$ Scarcity Reinforced.</p>
+            <img src="https://cognitioplus.aiwaapp.live/cache/media_cache/73aa163b8547d776fabad92f166c6cad.png" alt="Workforce Burnout Trap Diagram">
         </div>
         <div class="loop">
             <strong>Positive (Reinforcing) Loop: Data-Driven Improvement Engine</strong>
-            <p>Robust Data $\rightarrow$ Informed Interventions $\rightarrow$ Improved Outcomes $\rightarrow$ Increased Trust/Adoption $\rightarrow$ Generates More Data (Accelerates positive change).</p>
+            <img src="https://cognitioplus.aiwaapp.live/cache/media_cache/8d9ac228e5d3f0f67bd0e3bddf9a559f.png" alt="Data-Driven Improvement Engine Diagram">
         </div>
     </div>
 
@@ -253,39 +278,39 @@
     <div class="figure-grid" style="grid-template-columns: repeat(2, 1fr);">
         <div class="figure-block" style="border-color: var(--cognitio-gold);">
             <div class="figure-value" style="color: var(--cognitio-gold);">L1</div>
-            <div class="figure-label">Workforce **Task Shifting**</div>
-            <p style="font-size: 0.8em;">Train 500+ Community Paraprofessionals (Breaks Workforce Trap)</p>
+            <div class="figure-label">Workforce Task Shifting</div>
+            <p style="font-size: 0.8em;">Train and Certifiy 500+ Mental Health Paraprofessionals (Breaks Workforce Trap)</p>
         </div>
         <div class="figure-block" style="border-color: var(--cognitio-gold);">
             <div class="figure-value" style="color: var(--cognitio-gold);">L2</div>
-            <div class="figure-label">Integrated **Information Flow**</div>
+            <div class="figure-label">Integrated Information Flow</div>
             <p style="font-size: 0.8em;">Secure EHR/PhilHealth Integration (Activates Improvement Engine)</p>
         </div>
     </div>
 
     <hr style="border-top: 1px dashed var(--cognitio-purple); margin: 30px 0;">
 
-    <div class="chapter-title">Chapter 3: Foundational Structural Pillars</div>
+    <div class="chapter-title">Foundational Structural Pillars</div>
 
     <h4>Required Structural Components</h4>
     <ul>
-        <li>**Standardized Tools:** Implementation of AI-powered self-assessment and screening for dynamic risk profiling at the community level.</li>
-        <li>**Capacity Building:** Rigorous training of community workers using WHO's mhGAP protocols.</li>
-        <li>**Seamless Navigation:** Establishing clear and simple patient referral pathways between digital, community, and specialist tiers of care.</li>
+        <li>**Standardized Tools:** Implementation of AI-powered self-assessmentt and screening for dynamic risk profiling at the community level.</li>
+        <li>Capacity Building: Rigorous training of community workers using WHO's mhGAP protocols.</li>
+        <li>Seamless Navigation: Establishing clear and simple patient referral pathways allowing transitions between digital tools, community workers, and specialized care.</li>
     </ul>
 
     <h4>Cognitio+ Countermeasures to Systemic Barriers</h4>
     <div class="insight-box">
         <strong>Barrier:</strong> Cost Prohibitive Care / Financial Constraints
-        <p style="margin-left: 10px;">**Countermeasure:** Implement Tiered/Subsidized Pricing and B2G Contracts to cross-subsidize free basic services for low-income groups.</p>
+        <p style="margin-left: 10px;">Countermeasure: Implement Tiered/Subsidized Pricing and B2G Contracts to cross-subsidize free basic services for low-income groups.</p>
     </div>
     <div class="insight-box">
         <strong>Barrier:</strong> Digital Divide / Geographic Isolation (GIDA)
-        <p style="margin-left: 10px;">**Countermeasure:** Develop Offline-Enabled "Lite" Applications and leverage SMS/multi-platform support to reach geographically isolated areas.</p>
+        <p style="margin-left: 10px;">Countermeasure: Develop Offline-Enabled "Lite" Applications and leverage SMS/multi-platform support to reach geographically isolated and disadvantaged areas.</p>
     </div>
 
     <div class="cta-section">
-        <h4>CALL TO ACTION: DRIVE SEAMLESS INTEGRATION NOW</h4>
+        <h4>GOAL: DRIVE SEAMLESS INTEGRATION</h4>
         <p style="font-size: 1.1em; margin-bottom: 20px;">The integration of mental health services requires immediate, systemic alignment and investment in decentralized, culturally responsive care.</p>
         <p><strong>Action 1: Budget Re-Allocation:</strong> Re-channel mental health budget from centralized hospitals to LGU-led PHC capacity building.</p>
         <p><strong>Action 2: Training Initiative:</strong> Immediately launch the task-shifting program to train 500+ Community Mental Health Paraprofessionals.</p>
