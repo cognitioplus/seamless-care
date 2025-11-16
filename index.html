@@ -30,7 +30,19 @@
             background-color: white;
             border-radius: 12px;
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-            border-top: 8px solid var(--cognitio-purple);
+            /* Removed border-top since the banner now serves as the visual header */
+        }
+
+        /* Banner Image Styling */
+        .banner-image {
+            /* Calculate width to span 100% of container plus the 30px padding on each side */
+            width: calc(100% + 60px); 
+            height: auto;
+            display: block;
+            /* Use negative margin to pull the image flush to the container's edges */
+            margin: -30px -30px 20px -30px; 
+            /* Apply the top border-radius of the container */
+            border-radius: 12px 12px 0 0; 
         }
 
         /* Typography */
@@ -127,7 +139,7 @@
             left: 0;
         }
 
-        /* Chart/Diagram Styling */
+        /* Chart/Diagram Styling (Feedback Loops) */
         .chart-block {
             background-color: var(--cognitio-primary);
             color: var(--text-light);
@@ -164,7 +176,7 @@
             padding: 5px;
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-            height: auto; /* Ensure image scales correctly */
+            height: auto; 
         }
 
         /* CTA Section */
@@ -210,16 +222,21 @@
             .figure-value {
                 font-size: 2em;
             }
+            .banner-image {
+                /* Adjust for smaller screens where padding might change */
+                margin: -30px -30px 20px -30px; 
+            }
         }
     </style>
 </head>
 <body>
 
 <div class="infographic-container">
+    <img src="https://cognitioplus.aiwaapp.live/cache/media_cache/191eefbfe8e601af68533ecfccc74c89.png" alt="Seamless Care Mental Health Banner" class="banner-image">
     <h3>SEAMLESS CARE: INTEGRATING MENTAL HEALTH</h3>
     <p style="text-align: center; font-style: italic; color: var(--cognitio-primary);">A Systems Blueprint for Transforming Mental Health into Primary Healthcare (PHC) in the Philippines</p>
 
-    <div class="chapter-title">The Systemic Imperative</div>
+    <div class="chapter-title">Chapter 1: The Systemic Imperative</div>
 
     <h4>Key Figures: The Crisis & Capacity Gap</h4>
     <div class="figure-caption">FIGURE 1: Philippines Mental Health Burden & Workforce Capacity</div>
@@ -278,39 +295,39 @@
     <div class="figure-grid" style="grid-template-columns: repeat(2, 1fr);">
         <div class="figure-block" style="border-color: var(--cognitio-gold);">
             <div class="figure-value" style="color: var(--cognitio-gold);">L1</div>
-            <div class="figure-label">Workforce Task Shifting</div>
-            <p style="font-size: 0.8em;">Train and Certifiy 500+ Mental Health Paraprofessionals (Breaks Workforce Trap)</p>
+            <div class="figure-label">Workforce **Task Shifting**</div>
+            <p style="font-size: 0.8em;">Train 500+ Community Paraprofessionals (Breaks Workforce Trap)</p>
         </div>
         <div class="figure-block" style="border-color: var(--cognitio-gold);">
             <div class="figure-value" style="color: var(--cognitio-gold);">L2</div>
-            <div class="figure-label">Integrated Information Flow</div>
+            <div class="figure-label">Integrated **Information Flow**</div>
             <p style="font-size: 0.8em;">Secure EHR/PhilHealth Integration (Activates Improvement Engine)</p>
         </div>
     </div>
 
     <hr style="border-top: 1px dashed var(--cognitio-purple); margin: 30px 0;">
 
-    <div class="chapter-title">Foundational Structural Pillars</div>
+    <div class="chapter-title">Chapter 3: Foundational Structural Pillars</div>
 
     <h4>Required Structural Components</h4>
     <ul>
-        <li>**Standardized Tools:** Implementation of AI-powered self-assessmentt and screening for dynamic risk profiling at the community level.</li>
-        <li>Capacity Building: Rigorous training of community workers using WHO's mhGAP protocols.</li>
-        <li>Seamless Navigation: Establishing clear and simple patient referral pathways allowing transitions between digital tools, community workers, and specialized care.</li>
+        <li>**Standardized Tools:** Implementation of AI-powered self-assessment and screening for dynamic risk profiling at the community level.</li>
+        <li>**Capacity Building:** Rigorous training of community workers using WHO's mhGAP protocols.</li>
+        <li>**Seamless Navigation:** Establishing clear and simple patient referral pathways allowing transitions between digital tools, community workers, and specialized care.</li>
     </ul>
 
     <h4>Cognitio+ Countermeasures to Systemic Barriers</h4>
     <div class="insight-box">
         <strong>Barrier:</strong> Cost Prohibitive Care / Financial Constraints
-        <p style="margin-left: 10px;">Countermeasure: Implement Tiered/Subsidized Pricing and B2G Contracts to cross-subsidize free basic services for low-income groups.</p>
+        <p style="margin-left: 10px;">**Countermeasure:** Implement Tiered/Subsidized Pricing and B2G Contracts to cross-subsidize free basic services for low-income groups.</p>
     </div>
     <div class="insight-box">
         <strong>Barrier:</strong> Digital Divide / Geographic Isolation (GIDA)
-        <p style="margin-left: 10px;">Countermeasure: Develop Offline-Enabled "Lite" Applications and leverage SMS/multi-platform support to reach geographically isolated and disadvantaged areas.</p>
+        <p style="margin-left: 10px;">**Countermeasure:** Develop Offline-Enabled "Lite" Applications and leverage SMS/multi-platform support to reach geographically isolated and disadvantaged areas.</p>
     </div>
 
     <div class="cta-section">
-        <h4>GOAL: DRIVE SEAMLESS INTEGRATION</h4>
+        <h4>CALL TO ACTION: DRIVE SEAMLESS INTEGRATION NOW</h4>
         <p style="font-size: 1.1em; margin-bottom: 20px;">The integration of mental health services requires immediate, systemic alignment and investment in decentralized, culturally responsive care.</p>
         <p><strong>Action 1: Budget Re-Allocation:</strong> Re-channel mental health budget from centralized hospitals to LGU-led PHC capacity building.</p>
         <p><strong>Action 2: Training Initiative:</strong> Immediately launch the task-shifting program to train 500+ Community Mental Health Paraprofessionals.</p>
@@ -319,6 +336,5 @@
     </div>
 
 </div>
-
 </body>
 </html>
