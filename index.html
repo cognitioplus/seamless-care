@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seamless Care: Systems Blueprint for Mental Health Integration</title>
+    <style>
+        /* Base styles for the infographic container */
+        .infographic-container {
+            font-family: 'Poppins', 'Montserrat Classic', 'Roboto Condensed', sans-serif;
+            color: #333;
+            padding: 20px;
+            border: 1px solid #c80ec9;
+            background-color: #f9f9f9;
+            max-width: 900px;
+            margin: 0 auto;
+            border-radius: 10px;
+        }
+        /* Define color variables */
+        :root {
+            --cognitio-primary: #b425aa;
+            --cognitio-purple: #c80ec9;
+            --cognitio-gold: #D4AF37; /* Adjusted to a valid hex code for metallic gold */
+        }
+        /* Headings */
+        .infographic-container h3 {
+            font-family: 'Montserrat Classic', sans-serif;
+            color: var(--cognitio-purple);
+            text-align: center;
+            border-bottom: 3px solid var(--cognitio-gold);
+            padding-bottom: 5px;
+            margin-top: 20px;
+        }
+        .infographic-container h4 {
+            font-family: 'Roboto Condensed', sans-serif;
+            color: var(--cognitio-primary);
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+        /* Overall Structure */
+        .section-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .section-box {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-top: 4px solid var(--cognitio-primary);
+            margin-bottom: 20px;
+        }
+        .data-point {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: var(--cognitio-purple);
+            margin: 5px 0;
+        }
+        .data-point span {
+            font-size: 0.9em;
+            font-weight: normal;
+            color: #555;
+            display: block;
+        }
+        /* Lists/Points */
+        ul {
+            padding-left: 20px;
+            list-style-type: none;
+        }
+        li {
+            margin-bottom: 8px;
+            line-height: 1.4;
+            position: relative;
+            padding-left: 15px;
+        }
+        li::before {
+            content: '•';
+            color: var(--cognitio-gold);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        /* Complex Adaptive System (CAS) Block */
+        .cas-block {
+            background-color: var(--cognitio-primary);
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .cas-block strong {
+            color: var(--cognitio-gold);
+        }
+        /* Feedback Loops Table */
+        .table-loops {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        .table-loops th, .table-loops td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+            font-size: 0.9em;
+        }
+        .table-loops th {
+            background-color: var(--cognitio-purple);
+            color: white;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+        .table-loops td:nth-child(1) {
+            font-weight: bold;
+            background-color: #f0f0f0;
+        }
+        /* Leverage Points Section */
+        .leverage-grid {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+            flex-wrap: wrap;
+        }
+        .leverage-point {
+            flex: 1;
+            min-width: 250px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-left: 5px solid var(--cognitio-gold);
+            background-color: #fff;
+            border-radius: 5px;
+        }
+        .leverage-point strong {
+            color: var(--cognitio-purple);
+            font-size: 1.05em;
+            display: block;
+            margin-bottom: 3px;
+        }
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .section-grid {
+                grid-template-columns: 1fr;
+            }
+            .leverage-grid {
+                flex-direction: column;
+            }
+            .leverage-point {
+                min-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="infographic-container">
+  <h3>SEAMLESS CARE: The Systemic Blueprint for Mental Health Integration</h3>
+  <p style="text-align: center; font-style: italic;">A Systems Approach to Integrate Mental Health into Philippine Primary Healthcare (PHC)</p>
+
+  <div class="section-box">
+    <h4><span style="color:var(--cognitio-gold);">|</span> 1. The Systemic Imperative: Context and Gaps</h4>
+    
+    <div class="section-grid">
+      <div class="data-box">
+        <h4><span style="color:var(--cognitio-gold);">⚖️</span> Legal Mandate</h4>
+        [cite_start]<p class="data-point">RA 11036 (2018) [cite: 58]</p>
+        [cite_start]<span>Philippine Mental Health Act explicitly requires integrating MH care into basic PHC services[cite: 58].</span>
+      </div>
+      <div class="data-box">
+        <h4><span style="color:var(--cognitio-gold);">📈</span> MH Burden</h4>
+        <p class="data-point">11.3% - 11.6%</p>
+        [cite_start]<span>Prevalence of mental disorders in the Filipino population [cite: 49] [cite_start](Anxiety & Depression are prevailing conditions [cite: 60]).</span>
+      </div>
+      <div class="data-box">
+        <h4><span style="color:var(--cognitio-gold);">🚧</span> Critical Bottleneck</h4>
+        [cite_start]<p class="data-point">Acute Workforce Shortage [cite: 64]</p>
+        [cite_start]<span>Only ~500 Psychiatrists and ~1,600 Psychologists for a population of ~110 Million[cite: 67].</span>
+      </div>
+    </div>
+
+    <h4><span style="color:var(--cognitio-gold);">🏛️</span> Legislative Gaps & Barriers to PHC Integration</h4>
+    <ul>
+      [cite_start]<li><p><strong>Over-Centralization:</strong> Services are overwhelmingly concentrated in psychiatric hospitals [cite: 65][cite_start], failing to reach the local PHC level[cite: 66].</p></li>
+      [cite_start]<li><p><strong>Fragile Financial Leverage:</strong> Massive funding influx (57M to 1B PHP between 2022-2023 [cite: 70][cite_start]) is a leverage point [cite: 70, 71][cite_start], but may persist in the centralized hospital model if not redirected[cite: 71, 72].</p></li>
+      [cite_start]<li><p><strong>Pervasive Stigma:</strong> Cultural misconceptions act as pervasive barriers [cite: 73][cite_start], discouraging help-seeking behaviors [cite: 73][cite_start], particularly among high-risk demographics like men and Indigenous Peoples[cite: 73].</p></li>
+    </ul>
+
+    <h4><span style="color:var(--cognitio-gold);">🤝</span> Strategy: Co-Creation & Cultural Humility</h4>
+    [cite_start]<p style="font-size: 0.9em;">Service transformation must adopt a model of **co-creation** [cite: 77][cite_start], involving stakeholders in the design process [cite: 78][cite_start], with deep cultural humility and responsiveness [cite: 80][cite_start], to overcome cultural resistance and stigma[cite: 80].</p>
+    <ul>
+      [cite_start]<li><strong>KAPWA:</strong> Core Filipino psychological concept meaning "shared identity"[cite: 80, 44].</li>
+      [cite_start]<li><strong>BAYANIHAN:</strong> Core Filipino value representing community support and collective endeavor[cite: 80, 44].</li>
+      [cite_start]<li><strong>HILOT:</strong> Traditional Filipino healing method[cite: 44].</li>
+    </ul>
+  </div>
+
+  <hr style="border-top: 1px dashed #ccc;">
+
+  <div class="section-box">
+    <h4><span style="color:var(--cognitio-gold);">⚙️</span> 2. The Systems Thinking Blueprint for Integration</h4>
+    
+    <div class="cas-block">
+      [cite_start]The Philippine Health Sector is a <strong>Complex Adaptive System (CAS)</strong>[cite: 84].
+      [cite_start]<br>The system is characterized by diverse, interdependent stakeholders (DOH, PhilHealth, LGUs, BHWs)[cite: 85, 44]. [cite_start]Interventions must be designed to anticipate emergent barriers and unintended consequences[cite: 85].
+    </div>
+    
+    <h4><span style="color:var(--cognitio-gold);">🔁</span> Identification of System Feedback Loops</h4>
+    <table class="table-loops">
+      <thead>
+        <tr>
+          <th>Loop Type</th>
+          <th>Name</th>
+          <th>Mechanism</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Negative (Stabilizing)</td>
+          [cite_start]<td>Stigma-Isolation Trap [cite: 91, 93, 104]</td>
+          [cite_start]<td>High societal stigma $\rightarrow$ Discouraged help-seeking $\rightarrow$ Untreated conditions $\rightarrow$ Hidden/Confirmed stigma (Reinforces original stigma)[cite: 93, 94].</td>
+        </tr>
+        <tr>
+          <td>Negative (Stabilizing)</td>
+          [cite_start]<td>Workforce-Burnout Trap [cite: 91, 95, 112]</td>
+          [cite_start]<td>Provider scarcity $\rightarrow$ Excessive caseloads $\rightarrow$ High burnout/turnover $\rightarrow$ Further reduced workforce (Perpetuates scarcity)[cite: 95, 96, 97].</td>
+        </tr>
+        <tr>
+          <td>Positive (Reinforcing)</td>
+          [cite_start]<td>Data-Driven Improvement Engine [cite: 98, 100, 120]</td>
+          [cite_start]<td>Analytics & Data Gathering $\rightarrow$ Informed Interventions $\rightarrow$ Improved Outcomes $\rightarrow$ Increased Adoption/Trust $\rightarrow$ Generates More Robust Data (Accelerates positive change)[cite: 101, 102, 103].</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h4><span style="color:var(--cognitio-gold);">🎯</span> High-Impact Leverage Points</h4>
+    [cite_start]<p style="font-size: 0.9em; margin-top: 10px;">Strategic points where a small effort yields disproportionately large positive outcomes[cite: 130, 44].</p>
+    <div class="leverage-grid">
+      <div class="leverage-point">
+        <strong>1. [cite_start]Workforce Transformation (Task Shifting) [cite: 131]</strong>
+        [cite_start]<p>Goal: Train over 500 Community Mental Health Paraprofessionals[cite: 132].</p>
+        [cite_start]<p style="font-size: 0.85em;">Action: Shifts service delivery responsibility to non-specialists and community workers, dramatically expanding system capacity perimeter[cite: 132, 133].</p>
+      </div>
+      <div class="leverage-point">
+        <strong>2. [cite_start]Redefining Information Flow [cite: 134]</strong>
+        [cite_start]<p>Action: Implement secure integration with existing Electronic Health Records (EHRs) and PhilHealth claims systems[cite: 134].</p>
+        [cite_start]<p style="font-size: 0.85em;">Goal: Shifts system from fragmented data silos to streamlined, integrated care delivery[cite: 135].</p>
+      </div>
+      <div class="leverage-point">
+        <strong>3. [cite_start]Cultural Paradigm Shift [cite: 136]</strong>
+        [cite_start]<p>Action: Integrate the Katatagan resilience framework and co-design approach[cite: 136].</p>
+        [cite_start]<p style="font-size: 0.85em;">Goal: Challenges clinical, Western-centric mental models by embedding interventions within familiar Filipino cultural concepts[cite: 137].</p>
+      </div>
+    </div>
+  </div>
+
+  <hr style="border-top: 1px dashed #ccc;">
+
+  <div class="section-box">
+    <h4><span style="color:var(--cognitio-gold);">🏗️</span> 3. Foundational Pillars: Structural Requirements & Barriers</h4>
+    
+    [cite_start]<h4><span style="color:var(--cognitio-gold);">✅</span> Required Structural Components for Integration [cite: 144]</h4>
+    <ul>
+      [cite_start]<li><strong>Standardized Screening Tools:</strong> AI-powered self-assessment tools provide dynamic, personalized risk profiles for initial detection[cite: 144].</li>
+      [cite_start]<li><strong>Capacity Building/Task Shifting:</strong> Training 500+ community-based mental health paraprofessionals [cite: 145] [cite_start]to staff decentralized services [cite: 145] [cite_start](following mhGAP protocols [cite: 145]).</li>
+      [cite_start]<li><strong>Patient Navigation & Referral:</strong> Seamless pathways allowing users to transition easily between digital tools, counseling, and specialized care[cite: 146].</li>
+    </ul>
+
+    [cite_start]<h4><span style="color:var(--cognitio-gold);">🛑</span> Systemic Barriers & Targeted Countermeasures (Cognitio+ Model) [cite: 154]</h4>
+    <table class="table-loops">
+      <thead>
+        <tr>
+          <th>Systemic Barrier</th>
+          <th>Impact on PHC</th>
+          <th>Cognitio+ Countermeasure</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          [cite_start]<td>Severe Workforce Shortage [cite: 154]</td>
+          [cite_start]<td>Centralized, high cost care, limited rural access [cite: 154]</td>
+          [cite_start]<td>Task Shifting (500+ Paraprofessionals) [cite: 154][cite_start], Teletherapy, AI Triage [cite: 154]</td>
+        </tr>
+        <tr>
+          [cite_start]<td>Financial Barriers/Cost [cite: 154]</td>
+          [cite_start]<td>Exclusion of low-income populations [cite: 154]</td>
+          [cite_start]<td>Tiered/Subsidized Pricing [cite: 154][cite_start], B2G Contracts [cite: 154][cite_start], Free Basic Tools [cite: 154]</td>
+        </tr>
+        <tr>
+          [cite_start]<td>Stigma/Cultural Misconceptions [cite: 154]</td>
+          [cite_start]<td>Low help-seeking, delayed intervention [cite: 154]</td>
+          [cite_start]<td>Anonymous Services [cite: 149][cite_start], Anti-Stigma SBCC [cite: 154][cite_start], Cultural Co-Design [cite: 154][cite_start], Katatagan framework [cite: 154]</td>
+        </tr>
+        <tr>
+          [cite_start]<td>Digital Divide/Geographic Isolation [cite: 154]</td>
+          [cite_start]<td>Unequal access in GIDAs (remote areas) [cite: 154]</td>
+          [cite_start]<td>Offline-Enabled "Lite" Apps [cite: 154][cite_start], SMS Support [cite: 154][cite_start], Multi-Platform Delivery [cite: 154]</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+    
+  <p style="text-align: center; font-size: 0.9em; margin-top: 20px;">
+    [cite_start]<strong>Next Steps:</strong> The Cognitio+ model treats financial sustainability, cultural alignment, and technological reach as mutually reinforcing components[cite: 150]. [cite_start]The long-term strategy includes revenue diversification (B2B, B2G, grants) to cross-subsidize free services and alignment with the Philippine Mental Health Act for institutional adoption[cite: 151, 153].
+  </p>
+
+</div>
+
+</body>
+</html>
+
+The content is now provided in a single `index.html` file, including all CSS styles inline in the `<style>` tag, as requested.
