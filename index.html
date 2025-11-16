@@ -10,7 +10,7 @@
             --cognitio-primary: #b425aa; /* Deep Magenta/Pink */
             --cognitio-purple: #c80ec9; /* Bright Fuchsia/Purple */
             --cognitio-gold: #D4AF37;   /* Metallic Gold Accent */
-            --text-dark: #222;
+            --text-dark: #333; /* Slightly darker for better visibility */
             --text-light: #f9f9f9;
         }
 
@@ -20,6 +20,7 @@
             background-color: #f0f0f5;
             color: var(--text-dark);
             line-height: 1.6;
+            font-size: 16px; /* Increased base font size */
         }
 
         /* Infographic Container */
@@ -29,7 +30,7 @@
             padding: 30px;
             background-color: white;
             border-radius: 12px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Stronger shadow */
         }
 
         /* Banner Image Styling */
@@ -46,25 +47,27 @@
             font-family: 'Montserrat Classic', sans-serif;
             color: var(--cognitio-primary);
             text-align: center;
-            font-size: 2.2em;
+            font-size: 2.4em;
             margin-bottom: 5px;
+            letter-spacing: 1px;
         }
         h4 {
             font-family: 'Roboto Condensed', sans-serif;
             color: var(--cognitio-purple);
-            font-size: 1.5em;
-            border-left: 5px solid var(--cognitio-gold);
-            padding-left: 10px;
-            margin-top: 25px;
+            font-size: 1.6em;
+            border-left: 6px solid var(--cognitio-gold);
+            padding-left: 12px;
+            margin-top: 30px;
+            font-weight: bold;
         }
         .chapter-title {
             font-family: 'Montserrat Classic', sans-serif;
-            font-size: 1.8em;
+            font-size: 2em;
             color: var(--cognitio-primary);
             text-align: center;
-            padding: 10px 0;
-            margin-bottom: 20px;
-            border-bottom: 2px solid var(--cognitio-gold);
+            padding: 15px 0;
+            margin-bottom: 25px;
+            border-bottom: 3px solid var(--cognitio-gold);
         }
 
         /* Figures and Data Blocks */
@@ -76,27 +79,28 @@
             text-align: center;
         }
         .figure-block {
-            background-color: #f7e6f8; /* Light purple */
-            padding: 15px;
+            background-color: #fcefff; /* Very light purple */
+            padding: 20px 10px;
             border-radius: 8px;
             border: 1px solid var(--cognitio-primary);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
         }
         .figure-value {
             font-family: 'Montserrat Classic', sans-serif;
-            font-size: 2.5em;
+            font-size: 2.8em;
             font-weight: bold;
             color: var(--cognitio-purple);
             line-height: 1;
         }
         .figure-label {
             font-family: 'Roboto Condensed', sans-serif;
-            font-size: 0.9em;
+            font-size: 1em;
             color: var(--text-dark);
             margin-top: 5px;
         }
         .figure-caption {
             font-style: italic;
-            font-size: 0.8em;
+            font-size: 0.85em;
             color: #666;
             margin-top: 10px;
         }
@@ -104,11 +108,11 @@
         /* Insights and Lists */
         .insight-box {
             background-color: #fff;
-            padding: 15px;
+            padding: 20px;
             border-radius: 8px;
             border-left: 6px solid var(--cognitio-gold);
-            margin: 15px 0;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            margin: 20px 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
         }
         .insight-box strong {
             color: var(--cognitio-purple);
@@ -121,7 +125,7 @@
         }
         li {
             margin-bottom: 12px;
-            line-height: 1.5;
+            line-height: 1.6;
             padding-left: 30px; 
             position: relative;
         }
@@ -142,77 +146,90 @@
         .leverage-point-block {
             flex: 1;
             background-color: #f7e6f8;
-            padding: 15px;
-            border-radius: 8px;
-            border: 1px solid var(--cognitio-primary);
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid var(--cognitio-gold);
             text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
         .leverage-point-block img {
-            height: 60px; /* Icon size */
-            margin-bottom: 5px;
+            height: 60px; 
+            margin-bottom: 10px;
+            border-radius: 5px;
         }
         .leverage-point-block strong {
             font-family: 'Montserrat Classic', sans-serif;
             color: var(--cognitio-purple);
-            font-size: 1.1em;
+            font-size: 1.2em;
             display: block;
             margin-top: 5px;
         }
         .leverage-point-block p {
-            font-size: 0.8em;
+            font-size: 0.9em;
             color: #555;
+            margin-top: 5px;
         }
 
         /* Chapter 3 Structural Components Custom Icons */
+        .component-list {
+            list-style: none;
+            padding: 0;
+        }
         .component-item {
-            margin-bottom: 12px;
-            line-height: 1.5;
-            padding-left: 50px; 
+            background-color: #fcfcfc;
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 10px;
+            border-radius: 6px;
+            line-height: 1.6;
+            padding-left: 60px; 
             position: relative;
-            min-height: 35px;
+            min-height: 40px;
         }
         .component-item img {
-            width: 35px;
-            height: 35px;
+            width: 40px;
+            height: 40px;
             position: absolute;
-            left: 0;
+            left: 10px;
             top: 50%;
             transform: translateY(-50%);
         }
-        .component-item::before {
-            content: none; 
+        .component-item strong {
+            color: var(--cognitio-primary);
+            font-weight: bold;
         }
 
         /* Chart/Diagram Styling (Feedback Loops) */
         .chart-block {
             background-color: var(--cognitio-primary);
             color: var(--text-light);
-            padding: 20px;
-            border-radius: 8px;
-            margin: 20px 0;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 25px 0;
             text-align: center;
         }
         .chart-title {
             font-family: 'Montserrat Classic', sans-serif;
-            font-size: 1.2em;
-            margin-bottom: 15px;
+            font-size: 1.3em;
+            margin-bottom: 20px;
             color: var(--cognitio-gold);
         }
         .loop {
-            margin: 10px 0;
-            padding: 15px 10px;
-            border-bottom: 1px dashed rgba(255, 255, 255, 0.5);
-        }
-        .loop:last-child {
-            border-bottom: none;
+            background-color: rgba(255, 255, 255, 0.1);
+            margin: 15px 0;
+            padding: 20px;
+            border-radius: 8px;
         }
         .loop strong {
             color: var(--cognitio-gold);
             display: block;
             margin-bottom: 10px;
+            font-size: 1.1em;
         }
         .loop p {
-            font-size: 0.9em;
+            font-size: 0.95em;
+            margin-bottom: 15px;
+            text-align: left;
         }
         .loop img {
             width: 100%;
@@ -229,30 +246,38 @@
         /* CTA Section */
         .cta-section {
             background-color: var(--cognitio-purple);
-            padding: 30px;
-            border-radius: 10px;
+            padding: 35px;
+            border-radius: 12px;
             text-align: center;
-            margin-top: 30px;
+            margin-top: 35px;
             color: var(--text-light);
-            border: 3px solid var(--cognitio-gold);
+            border: 4px solid var(--cognitio-gold);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
         }
         .cta-section h4 {
             color: var(--cognitio-gold);
-            font-size: 1.8em;
+            font-size: 2em;
             border: none;
             padding: 0;
+            margin-top: 0;
         }
         .cta-action-point {
-            font-size: 1.05em;
-            margin-bottom: 8px;
+            font-size: 1.1em;
+            margin: 10px auto;
             display: flex;
-            justify-content: center;
+            max-width: 600px;
             align-items: center;
+            text-align: left;
         }
         .cta-action-point .icon {
-            font-size: 1.2em;
-            margin-right: 8px;
+            font-size: 1.4em;
+            margin-right: 10px;
             color: var(--cognitio-gold);
+            min-width: 25px;
+            text-align: center;
+        }
+        .cta-action-point strong {
+            font-weight: bold;
         }
         .cta-button {
             display: inline-block;
@@ -261,7 +286,6 @@
             font-family: 'Montserrat Classic', sans-serif;
             font-weight: bold;
             padding: 12px 30px;
-            margin-top: 20px;
             border-radius: 25px;
             text-decoration: none;
             text-transform: uppercase;
@@ -273,10 +297,10 @@
             color: var(--cognitio-primary);
         }
         .cta-button-group {
-            margin-top: 20px;
+            margin-top: 25px;
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 15px;
         }
         .cta-button-group a {
             margin: 0 auto;
@@ -308,10 +332,10 @@
                 grid-template-columns: 1fr;
             }
             .figure-value {
-                font-size: 2em;
+                font-size: 2.2em;
             }
             .banner-image {
-                margin: -30px -30px 20px -30px; 
+                margin: -30px -30px 15px -30px; 
             }
             .leverage-point-grid {
                 flex-direction: column;
@@ -354,13 +378,13 @@
 
     <h4>Main Insight: Barriers to Seamless Care</h4>
     <div class="insight-box">
-        The primary legislative gap is the **Over-Centralization** of resources and services in psychiatric hospitals. This creates a supply-side failure where care cannot reach the local PHC/Barangay level, directly contradicting the spirit of the Philippine Mental Health Act.
+        The primary legislative gap is the <strong>Over-Centralization</strong> of resources and services in psychiatric hospitals. This creates a supply-side failure where care cannot reach the local PHC/Barangay level, directly contradicting the spirit of the Philippine Mental Health Act.
     </div>
 
     <h4>Co-Creation Strategy for Cultural Humility</h4>
     <ul>
-        <li><span class="icon">🤝</span> **Harnessing Filipino Values:** Service design must be rooted in concepts like **KAPWA** (shared identity) and **BAYANIHAN** (communal support) to overcome deep-seated social **STIGMA**.</li>
-        <li><span class="icon">💰</span> **Financial Leverage:** Recent massive funding increases (PHP 57M to 1B) must be leveraged to **decentralize** resources and invest in community-based PHC systems.</li>
+        <li><span class="icon">🤝</span> <strong>Harnessing Filipino Values:</strong> Service design must be rooted in concepts like <strong>KAPWA</strong> (shared identity) and <strong>BAYANIHAN</strong> (communal support) to overcome deep-seated social <strong>STIGMA</strong>.</li>
+        <li><span class="icon">💰</span> <strong>Financial Leverage:</strong> Recent massive funding increases (PHP 57M to 1B) must be leveraged to decentralize resources and invest in community-based PHC systems.</li>
     </ul>
 
     <hr style="border-top: 1px dashed var(--cognitio-purple); margin: 30px 0;">
@@ -373,29 +397,29 @@
         <div class="loop">
             <strong>Negative (Stabilizing) Loop: Stigma-Isolation Trap</strong>
             <p>When societal stigma against mental illness is high, individuals are discouraged from seeking help, resulting in untreated conditions. These unaddressed cases remain hidden and often worsen, which in turn fuels the societal perception that mental illness is a dangerous or hidden problem, thus reinforcing the original stigma and completing the loop.</p>
-            <img src="https://cognitioplus.aiwaapp.live/cache/media_cache/1d1b5eb078d387b5327ec803f0e72bb6.png" alt="Stigma Isolation Trap Diagram">
+            <img src="https://cognitioplus.aiwaapp.live/cache/media_cache/dcdc04f11e37a584d7a9968c60219fa7.png" alt="Stigma Isolation Trap Diagram">
         </div>
         <div class="loop">
             <strong>Negative (Stabilizing) Loop: Workforce-Burnout Trap</strong>
             <p>The severe scarcity of licensed providers forces the few existing professionals to handle excessive caseloads. This leads directly to high rates of provider burnout and turnover. As providers leave the system, the overall workforce is further reduced, increasing the strain on those who remain and perpetuating the cycle of burnout.</p>
-            <img src="https://cognitioplus.aiwaapp.live/cache/media_cache/fdc3802d4874aa1494fa1f66a8ea3c79.png" alt="Workforce Burnout Trap Diagram">
+            <img src="https://cognitioplus.aiwaapp.live/cache/media_cache/73aa163b8547d776fabad92f166c6cad.png" alt="Workforce Burnout Trap Diagram">
         </div>
         <div class="loop">
             <strong>Positive (Reinforcing) Loop: Data-Driven Improvement Engine</strong>
             <p>The deployment of analytics creates a structured mechanism for gathering and analyzing real-time data on user behavior, service utilization, and outcomes. When these data inform the refinement of interventions, outcomes improve, leading to increased community trust and user adoption. Higher adoption then generates more robust data, further accelerating the capacity for evidence-based adaptation.</p>
-            <img src="https://cognitioplus.aiwaapp.live/cache/media_cache/879f5bdc67fee5aee68ac1099405a99e.png" alt="Data-Driven Improvement Engine Diagram">
+            <img src="https://cognitioplus.aiwaapp.live/cache/media_cache/8d9ac228e5d3f0f67bd0e3bddf9a559f.png" alt="Data-Driven Improvement Engine Diagram">
         </div>
     </div>
 
     <h4>High-Impact Leverage Points for Systemic Change</h4>
     <div class="figure-caption">Targeted actions yield disproportionate results to break stabilizing loops.</div>
     <div class="leverage-point-grid">
-        <div class="leverage-point-block" style="border-color: var(--cognitio-gold);">
-            <img src="https://appimize.app/assets/apps/user_1097/images/bfbcbeb7bb69_808_1097.png" alt="Paraprofessional Icon">
+        <div class="leverage-point-block">
+            <img src="https://cognitioplus.aiwaapp.live/cache/media_cache/3b2618f317c36f00c5991ac0e3a1b72a.png" alt="Paraprofessional Icon">
             <strong>L1: Workforce Task Shifting</strong>
             <p>Train 500+ Community Paraprofessionals (Breaks Workforce Trap)</p>
         </div>
-        <div class="leverage-point-block" style="border-color: var(--cognitio-gold);">
+        <div class="leverage-point-block">
             <img src="https://appimize.app/assets/apps/user_1097/images/66f7d09fca94_876_1097.png" alt="Data Flow Icon">
             <strong>L2: Integrated Information Flow</strong>
             <p>Secure EHR/PhilHealth Integration (Activates Improvement Engine)</p>
@@ -407,36 +431,36 @@
     <div class="chapter-title">Chapter 3: Foundational Structural Pillars</div>
 
     <h4>Required Structural Components</h4>
-    <ul>
+    <ul class="component-list">
         <li class="component-item">
-            <img src="https://appimize.app/assets/apps/user_1097/images/12e078ac72d5_748_1097.png" alt="AI Icon">
-            Standardized Tools: Implementation of AI-powered self-assessment and screening for dynamic risk profiling at the community level.
+            <img src="https://appimize.app/assets/apps/user_1097/images/6c2ccb2a1cf9_811_1097.png" alt="AI Icon">
+            <strong>Standardized Tools:</strong> Implementation of AI-powered self-assessment and screening for dynamic risk profiling at the community level.
         </li>
         <li class="component-item">
-            <img src="https://appimize.app/assets/apps/user_1097/images/bfbcbeb7bb69_808_1097.png" alt="Training Icon">
-            Capacity Building: Pursue certifying mental health and well-being paraprofessionals.
+            <img src="https://appimize.app/assets/apps/user_1097/images/797a4ebf6008_304_1097.png" alt="Training Icon">
+            <strong>Capacity Building:</strong> Rigorous training of community workers using WHO's mhGAP protocols.
         </li>
         <li class="component-item">
             <img src="https://appimize.app/assets/apps/user_1097/images/a00e6e94af97_251_1097.png" alt="Navigation Icon">
-            Seamless Navigation: Establishing clear and simple patient referral pathways allowing transitions between digital tools, community workers, and specialized care.
+            <strong>Seamless Navigation:</strong> Establishing clear and simple patient referral pathways allowing transitions between digital tools, community workers, and specialized care.
         </li>
     </ul>
 
     <h4>Cognitio+ Countermeasures to Systemic Barriers</h4>
     <div class="insight-box">
         <strong>Barrier:</strong> Cost Prohibitive Care / Financial Constraints
-        <p style="margin-left: 10px;"><span class="icon">✅</span> **Countermeasure:** Implement Tiered/Subsidized Pricing and B2G Contracts to cross-subsidize free basic services for low-income groups.</p>
+        <p style="margin-left: 10px;"><span class="icon">✅</span> <strong>Countermeasure:</strong> Implement Tiered/Subsidized Pricing and B2G Contracts to cross-subsidize free basic services for low-income groups.</p>
         <div class="countermeasure-button-container">
             <a href="https://cognitioplus.aiwaapp.live/service-customization/" class="countermeasure-button">explore service customization to experience tiered pricing</a>
         </div>
     </div>
     <div class="insight-box">
         <strong>Barrier:</strong> Digital Divide / Geographic Isolation (GIDA)
-        <p style="margin-left: 10px;"><span class="icon">📱</span> **Countermeasure:** Develop Offline-Enabled "Lite" Applications and leverage SMS/multi-platform support to reach geographically isolated and disadvantaged areas.</p>
+        <p style="margin-left: 10px;"><span class="icon">📱</span> <strong>Countermeasure:</strong> Develop Offline-Enabled "Lite" Applications and leverage SMS/multi-platform support to reach geographically isolated and disadvantaged areas.</p>
     </div>
 
     <div class="cta-section">
-        <h4>DRIVING SEAMLESS INTEGRATION</h4>
+        <h4>CALL TO ACTION: DRIVE SEAMLESS INTEGRATION NOW</h4>
         <p style="font-size: 1.1em; margin-bottom: 20px;">The integration of mental health services requires immediate, systemic alignment and investment in decentralized, culturally responsive care.</p>
         
         <div class="cta-action-point">
@@ -450,7 +474,7 @@
         </div>
 
         <div class="cta-button-group">
-            <a href="https://cognitioplus.aiwaapp.live/solutions/" class="cta-button">EXPERIENCE ACTUAL SOLUTIONS DEPLOYED</a>
+            <a href="#" class="cta-button">Engage With The Full Systems Roadmap</a>
             <a href="https://cognitioplus.github.io/seamless-care/3LayerSolution.html" class="cta-button">EXPLORE 3-LAYER SOLUTION</a>
         </div>
     </div>
