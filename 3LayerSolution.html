@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cognitio+ Hybrid Ecosystem Operational Analysis</title>
+    <title>Cognitio+ Hybrid Ecosystem: Solutions Showcase</title>
     <style>
         /* Font Imports for simulation (assuming availability or system fallback) */
         @import url('https://fonts.googleapis.com/css2?family=Montserrat+Classic:wght@700&family=Poppins:wght@600&family=Roboto+Condensed:wght@400;700&display=swap');
@@ -15,7 +15,6 @@
             --font-title: 'Montserrat Classic', sans-serif;
             --font-subtitle: 'Poppins', sans-serif;
             --font-body: 'Roboto Condensed', sans-serif;
-            --border-style: 2px solid var(--cognitio-purple);
         }
 
         body {
@@ -35,9 +34,9 @@
         h2 {
             font-family: var(--font-title);
             font-weight: 700;
-            font-size: 2em;
+            font-size: 2.2em;
             text-align: center;
-            color: var(--cognitio-primary);
+            color: var(--cognitio-purple);
         }
 
         h3 {
@@ -50,7 +49,7 @@
         .subtitle {
             font-family: var(--font-subtitle);
             font-weight: 600;
-            font-size: 1.1em;
+            font-size: 1.2em;
             text-align: center;
             color: var(--cognitio-purple);
             margin-bottom: 30px;
@@ -60,7 +59,7 @@
             background-color: rgba(180, 37, 170, 0.05);
             border-left: 5px solid var(--cognitio-purple);
             padding: 10px 15px;
-            margin: 20px 0 10px 0;
+            margin: 30px 0 15px 0;
         }
         
         .layer-title {
@@ -77,6 +76,47 @@
             font-size: 1em;
             margin-top: 5px;
         }
+
+        /* --- New Solutions Showcase Styles --- */
+        .solutions-showcase {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 15px;
+            margin-bottom: 25px;
+            padding: 15px;
+            border: 1px dashed var(--cognitio-primary);
+            border-radius: 8px;
+            background-color: #fff;
+        }
+
+        .solution-card {
+            flex: 1 1 300px; /* Allows up to 3 cards per row on wider screens */
+            text-align: center;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+        
+        .solution-icon {
+            width: 100%;
+            max-width: 150px;
+            height: auto;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            border: 1px solid var(--cognitio-primary);
+        }
+        
+        .solution-title {
+            font-family: var(--font-subtitle);
+            font-weight: 600;
+            color: var(--cognitio-purple);
+            font-size: 1.1em;
+            margin-top: 0;
+        }
+        /* --- End New Solutions Showcase Styles --- */
+
 
         table {
             width: 100%;
@@ -101,7 +141,7 @@
             font-weight: 600;
         }
 
-        td:nth-child(3) { /* Target column */
+        td:nth-child(3) { /* Status/Measurement column */
             font-weight: bold;
         }
 
@@ -175,23 +215,37 @@
 <body>
 
     <header>
-        <h2>🧠 Cognitio+ Hybrid Ecosystem: Operational Analysis 🇵🇭</h2>
-        <div class="subtitle">A Visualized, KPI-Driven Architecture for Mental Health Equity</div>
+        <h2>🧠 Cognitio+ Hybrid Ecosystem: Solutions Showcase 🇵🇭</h2>
+        <div class="subtitle">KPI-Driven Architecture for Mental Health Equity</div>
         <hr style="border: 1px solid var(--cognitio-metallic-gold);">
         <h3 style="text-align: center; color: var(--cognitio-primary);">
-            The 3-Layer Solution: A Seamless, Wraparound Ecosystem
+            The **3-Layer Solution**: A Seamless, Wraparound Ecosystem
         </h3>
-        <p style="text-align: center; font-style: italic; color: #555;">
-            Designed to dismantle barriers—geographical, financial, cultural, and systemic—through integrated Digital, Community, and Systems layers.
+        <p style="text-align: center; margin-bottom: 20px;">
+            <img src="3-Layer Solutions-721348499448_63_1097.png" alt="3-Layer Solution Diagram" style="max-width: 300px; height: auto;">
         </p>
         <hr style="border: 1px solid var(--cognitio-metallic-gold);">
     </header>
 
     <div class="layer-header">
         <div class="layer-title">🧩 LAYER 1: DIGITAL LAYER — The Access Engine</div>
-        <div class="layer-mission">✅ Core Mission: Democratize mental health access through scalable, secure, and culturally intelligent digital tools.</div>
+        <div class="layer-mission">✅ Core Mission: **Democratize** mental health access through scalable, secure, and culturally intelligent digital tools.</div>
     </div>
-
+    
+    <h3 style="margin-top: 10px;">🌟 Digital Solutions Showcase</h3>
+    <div class="solutions-showcase">
+        <div class="solution-card">
+            <img src="9b5474d290b6_375_1097.png" alt="Resilience and Wellness tools" class="solution-icon">
+            <div class="solution-title">AI-Powered Resilience & Wellness Tools</div>
+            <p style="font-size: 0.9em; margin: 5px 0;">Self-guided modules, NLP-personalized plans, and predictive crisis detection, available **offline-first**.</p>
+        </div>
+        <div class="solution-card">
+            <img src="f3691f9c34fc_286_1097.png" alt="Teletheraphy and Online Counseling" class="solution-icon">
+            <div class="solution-title">Affordable Teletherapy & Online Counseling</div>
+            <p style="font-size: 0.9em; margin: 5px 0;">Tiered pricing model ensures **financial equity**. Secure video, chat, and SMS support for last-mile areas.</p>
+        </div>
+    </div>
+    
     <h4>🔧 Component 1: Platform Development & AI-Powered Architecture</h4>
     <table>
         <thead>
@@ -202,32 +256,34 @@
             </tr>
         </thead>
         <tbody>
-            <tr><td>Platform Scalability</td><td>Modular SaaS deployment across 50+ provinces by 2027</td><td>✅ 85% modular feature adoption rate; 98% uptime SLA</td></tr>
-            <tr><td>AI/NLP Personalization Accuracy</td><td>90% user satisfaction with personalized wellness plans</td><td>📊 NLP sentiment analysis accuracy &gt;87%; resilience score correlation validated</td></tr>
-            <tr><td>Predictive Crisis Detection</td><td>Reduce crisis escalation by 40% via early warning system</td><td>⚠️ 3,200+ early alerts triggered in Q3 2025; 76% intervention success rate</td></tr>
-            <tr><td>Data Security Compliance</td><td>100% compliance with PDPA, GDPR, WHO guidelines</td><td>🔐 Annual third-party audit passed; zero data breach incidents</td></tr>
-        </tbody>
-    </table>
-
-    <h4>📱 Component 2: Offline-First & Multilingual Equity Strategy</h4>
-    <table>
-        <thead>
-            <tr>
-                <th>KPI</th>
-                <th>Target</th>
-                <th>Measurement / Status</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr><td>Offline Accessibility</td><td>100% core functionality available offline in low-bandwidth zones</td><td>📶 Lite PWA used in 120+ rural municipalities; SMS support active in 30+ IP communities</td></tr>
-            <tr><td>Multilingual Coverage</td><td>Services in 4+ languages (English, Filipino, Cebuano, Waray-waray)</td><td>🗣️ 89% user retention in regional dialects; 92% comprehension satisfaction</td></tr>
-            <tr><td>Digital Inclusion Reach</td><td>Serve 500K+ users in “last-mile” areas by 2027</td><td>📍 312K users reached as of Q4 2025; 68% from rural/underserved regions</td></tr>
+            <tr><td>Predictive Crisis Detection</td><td>Reduce crisis escalation by 40% via early warning system</td><td>⚠️ **3,200+** early alerts triggered in Q3 2025; **76%** intervention success rate</td></tr>
+            <tr><td>Digital Inclusion Reach</td><td>Serve 500K+ users in “last-mile” areas by 2027</td><td>📍 **312K** users reached; **68%** from rural/underserved regions</td></tr>
+            <tr><td>Cross-Subsidization Efficiency</td><td>60% of premium/B2B revenue funds free services</td><td>💵 **$720K** allocated to free access (Q1–Q3 2025)</td></tr>
         </tbody>
     </table>
 
     <div class="layer-header">
         <div class="layer-title">👥 LAYER 2: COMMUNITY LAYER — The Cultural Anchor</div>
-        <div class="layer-mission">✅ Core Mission: Build localized, stigma-free, culturally resonant mental health ecosystems.</div>
+        <div class="layer-mission">✅ Core Mission: Build localized, stigma-free, **culturally resonant** mental health ecosystems.</div>
+    </div>
+    
+    <h3 style="margin-top: 10px;">🌟 Community Solutions Showcase</h3>
+    <div class="solutions-showcase">
+        <div class="solution-card">
+            <img src="0c85fbd745cd_381_1097.png" alt="Community-Based Programs" class="solution-icon">
+            <div class="solution-title">Community-Based Psychoeducation</div>
+            <p style="font-size: 0.9em; margin: 5px 0;">Katatagan Resilience Modules and CareTalk Circles, delivered by local certified Paraprofessionals.</p>
+        </div>
+        <div class="solution-card">
+            <img src="2d5cb5dadead_225_1097.png" alt="GROWTH Tribe" class="solution-icon">
+            <div class="solution-title">GROWTH Tribe Peer Support Networks</div>
+            <p style="font-size: 0.9em; margin: 5px 0;">Certified peer facilitators creating safe, **gender-responsive** healing spaces in schools and barangays.</p>
+        </div>
+        <div class="solution-card">
+            <img src="e9605759d5a8_281_1097.png" alt="Substance Abuse Screening" class="solution-icon">
+            <div class="solution-title">Localized Screening & Traditional Healing</div>
+            <p style="font-size: 0.9em; margin: 5px 0;">Integration of **HILOT/PAG-ULI** traditional protocols alongside standardized screening.</p>
+        </div>
     </div>
 
     <h4>🤝 Component 1: Co-Design Partnerships with Indigenous & Marginalized Groups</h4>
@@ -240,15 +296,29 @@
             </tr>
         </thead>
         <tbody>
-            <tr><td>Communities Engaged</td><td>100+ Indigenous/remote communities co-designing interventions by 2027</td><td>🏞️ 67 communities engaged; 12 culturally adapted models live</td></tr>
-            <tr><td>Cultural Fidelity Score</td><td>90% participant validation of cultural relevance</td><td>📊 Post-intervention surveys show 88% agreement on “this feels like <i>our</i> way of healing”</td></tr>
-            <tr><td>Integration of Traditional Healing</td><td>HILOT, PAG-ULI integrated into 10+ care pathways</td><td>🕯️ 8 elders certified as cultural advisors; 3 traditional protocols now embedded in clinical workflows</td></tr>
+            <tr><td>Communities Engaged</td><td>100+ Indigenous/remote communities co-designing interventions by 2027</td><td>🏞️ **67** communities engaged; **12** culturally adapted models live</td></tr>
+            <tr><td>Paraprofessionals Trained</td><td>500+ by 2028</td><td>🧑‍🏫 **287** trained; **92%** actively deployed in Wellness Hubs</td></tr>
+            <tr><td>Cultural Fidelity Score</td><td>90% participant validation of cultural relevance</td><td>📊 Post-intervention surveys show **88%** agreement on “this feels like <i>our</i> way of healing”</td></tr>
         </tbody>
     </table>
     
     <div class="layer-header">
         <div class="layer-title">🏛️ LAYER 3: SYSTEMS LAYER — The Sustainability Backbone</div>
-        <div class="layer-mission">✅ Core Mission: Embed Cognitio+ into national systems—financially sustainable, policy-aligned, and interoperable.</div>
+        <div class="layer-mission">✅ Core Mission: Embed Cognitio+ into national systems—**financially sustainable**, policy-aligned, and interoperable.</div>
+    </div>
+
+    <h3 style="margin-top: 10px;">🌟 Systems Solutions Showcase</h3>
+    <div class="solutions-showcase">
+        <div class="solution-card">
+            <img src="1aa233b2ffe1_402_1097.png" alt="Research and Analytics Services" class="solution-icon">
+            <div class="solution-title">Data Analytics & Psychosocial Risk Mapping</div>
+            <p style="font-size: 0.9em; margin: 5px 0;">Quarterly reports to DOH/LGUs using real-time service data for targeted **resource allocation**.</p>
+        </div>
+        <div class="solution-card">
+            <img src="https://appimize.app/assets/apps/user_1097/images/a15c0774cce4_705_1097.png" alt="Policy Advisory" class="solution-icon">
+            <div class="solution-title">Policy Advisory & Institutional Integration</div>
+            <p style="font-size: 0.9em; margin: 5px 0;">Facilitating PhilHealth/LHU integration and securing **B2G/B2B** contracts for systemic sustainability.</p>
+        </div>
     </div>
 
     <h4>🤝 Component 1: Institutional Integration & B2G/B2B Contract Securing</h4>
@@ -261,14 +331,14 @@
             </tr>
         </thead>
         <tbody>
-            <tr><td>Public-Private Partnerships Secured</td><td>20+ by 2026</td><td>📜 14 secured (8 LGUs, 4 corporations, 2 NGOs); 6 in negotiation</td></tr>
-            <tr><td>PhilHealth/LHU Integration</td><td>Referral pathways active in 10+ LGUs by 2026</td><td>🏥 7 LGUs integrated; 12,000+ referrals processed since Jan 2025</td></tr>
-            <tr><td>Cross-Subsidization Risk Mitigation</td><td>&lt;10% dependency on grants by 2027</td><td>⚖️ Currently 35% grant-funded → target 8% by 2027 via B2G scaling</td></tr>
+            <tr><td>Public-Private Partnerships Secured</td><td>20+ by 2026</td><td>📜 **14** secured (8 LGUs, 4 corporations, 2 NGOs); 6 in negotiation</td></tr>
+            <tr><td>PhilHealth/LHU Integration</td><td>Referral pathways active in 10+ LGUs by 2026</td><td>🏥 **7** LGUs integrated; **12,000+** referrals processed since Jan 2025</td></tr>
+            <tr><td>Cross-Subsidization Risk Mitigation</td><td>&lt;10% dependency on grants by 2027</td><td>⚖️ Currently **35%** grant-funded → target 8% by 2027 via B2G scaling</td></tr>
         </tbody>
     </table>
     
     <div class="risk-alert">
-        ❗ **Critical Risk Alert**: Failure to secure 20+ B2G contracts by 2026 = collapse of cross-subsidization model → reversion to grant dependency → structural inequity resurgence.
+        ❗ **Critical Risk Alert**: Failure to secure **20+ B2G contracts by 2026** = collapse of cross-subsidization model → reversion to grant dependency → structural inequity resurgence.
     </div>
 
     <h2 style="margin-top: 40px;">🎯 OVERALL ECOSYSTEM KPI DASHBOARD</h2>
@@ -282,12 +352,10 @@
             </tr>
         </thead>
         <tbody>
-            <tr><td>User Reach</td><td>850,000+ users across all layers</td><td class="status-low">🟢 Low</td></tr>
-            <tr><td>Equity Gap Reduction</td><td>68% rural reach; 45% IP engagement</td><td class="status-medium">🟡 Medium (requires deeper IP penetration)</td></tr>
-            <tr><td>Financial Sustainability</td><td>65% revenue from B2B/B2G; 35% grants</td><td class="status-high">🟠 High (B2G targets must accelerate)</td></tr>
+            <tr><td>User Reach</td><td>**850,000+** users across all layers</td><td class="status-low">🟢 Low</td></tr>
+            <tr><td>Financial Sustainability</td><td>65% revenue from B2B/B2G; 35% grants</td><td class="status-high">🟠 **High** (B2G targets must accelerate)</td></tr>
             <tr><td>Cultural Fidelity</td><td>88% user validation across frameworks</td><td class="status-low">🟢 Low</td></tr>
             <tr><td>Systemic Integration</td><td>7 LGUs integrated; 14 partnerships</td><td class="status-medium">🟡 Medium (bureaucratic delays risk timeline)</td></tr>
-            <tr><td>Crisis Prevention Efficacy</td><td>76% early intervention success</td><td class="status-low">🟢 Low</td></tr>
         </tbody>
     </table>
     
@@ -304,9 +372,9 @@
         <div class="synergy-magic">
             <h4 style="color: var(--cognitio-metallic-gold); margin-top: 0;">The Magic Happens at the Edges:</h4>
             <ul>
-                <li>Digital meets Culture → AI understands dialects, predicts needs based on local stressors.</li>
-                <li>Community meets Systems → Paraprofessionals feed data into policy dashboards.</li>
-                <li>Systems meet Digital → EHRs trigger automated community outreach when risk spikes.</li>
+                <li>**Digital meets Culture** → AI understands dialects, predicts needs based on local stressors.</li>
+                <li>**Community meets Systems** → Paraprofessionals feed data into policy dashboards.</li>
+                <li>**Systems meet Digital** → EHRs trigger automated community outreach when risk spikes.</li>
             </ul>
         </div>
     </div>
@@ -329,3 +397,4 @@
     </div>
 </body>
 </html>
+Do you need any further customization, such as making the tables collapsible or integrating the full KPI data back into the main view?
