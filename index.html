@@ -30,18 +30,14 @@
             background-color: white;
             border-radius: 12px;
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-            /* Removed border-top since the banner now serves as the visual header */
         }
 
         /* Banner Image Styling */
         .banner-image {
-            /* Calculate width to span 100% of container plus the 30px padding on each side */
             width: calc(100% + 60px); 
             height: auto;
             display: block;
-            /* Use negative margin to pull the image flush to the container's edges */
             margin: -30px -30px 20px -30px; 
-            /* Apply the top border-radius of the container */
             border-radius: 12px 12px 0 0; 
         }
 
@@ -80,7 +76,7 @@
             text-align: center;
         }
         .figure-block {
-            background-color: #f7e6f8; /* Light purple */
+            background-color: #f7e6f8; 
             padding: 15px;
             border-radius: 8px;
             border: 1px solid var(--cognitio-primary);
@@ -118,25 +114,23 @@
             color: var(--cognitio-purple);
         }
 
+        /* Custom List Styling with Icons */
         ul {
-            padding-left: 20px;
+            padding-left: 0; /* Remove default padding */
             list-style-type: none;
         }
         li {
-            margin-bottom: 8px;
+            margin-bottom: 12px;
             line-height: 1.5;
+            padding-left: 30px; /* Space for the icon */
             position: relative;
-            padding-left: 20px;
         }
-        li::before {
-            content: '•';
-            color: var(--cognitio-gold);
-            font-weight: bold;
-            display: inline-block;
-            width: 1em;
-            margin-left: -1em;
+        li .icon {
+            color: var(--cognitio-primary); /* Primary color for icon */
+            font-size: 1.2em;
             position: absolute;
             left: 0;
+            top: 0;
         }
 
         /* Chart/Diagram Styling (Feedback Loops) */
@@ -167,6 +161,9 @@
             display: block;
             margin-bottom: 10px;
         }
+        .loop p {
+            font-size: 0.9em;
+        }
         .loop img {
             width: 100%;
             max-width: 450px;
@@ -195,6 +192,18 @@
             border: none;
             padding: 0;
         }
+        .cta-action-point {
+            font-size: 1.05em;
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .cta-action-point .icon {
+            font-size: 1.2em;
+            margin-right: 8px;
+            color: var(--cognitio-gold);
+        }
         .cta-button {
             display: inline-block;
             background-color: var(--cognitio-gold);
@@ -213,6 +222,15 @@
             background-color: white;
             color: var(--cognitio-primary);
         }
+        .cta-button-group {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .cta-button-group a {
+            margin: 0 auto;
+        }
 
         /* Media Queries for Responsiveness */
         @media (max-width: 768px) {
@@ -223,7 +241,6 @@
                 font-size: 2em;
             }
             .banner-image {
-                /* Adjust for smaller screens where padding might change */
                 margin: -30px -30px 20px -30px; 
             }
         }
@@ -236,7 +253,7 @@
     <h3>SEAMLESS CARE: INTEGRATING MENTAL HEALTH</h3>
     <p style="text-align: center; font-style: italic; color: var(--cognitio-primary);">A Systems Blueprint for Transforming Mental Health into Primary Healthcare (PHC) in the Philippines</p>
 
-    <div class="chapter-title">Chapter 1: The Systemic Imperative</div>
+    <div class="chapter-title">The Systemic Imperative</div>
 
     <h4>Key Figures: The Crisis & Capacity Gap</h4>
     <div class="figure-caption">FIGURE 1: Philippines Mental Health Burden & Workforce Capacity</div>
@@ -258,34 +275,37 @@
         </div>
     </div>
 
-    <h4>Main Insight: Barriers to Seamless Care</h4>
+    <h4>Main Barrier to Seamless Care</h4>
     <div class="insight-box">
-        The primary legislative gap is the **Over-Centralization** of resources and services in psychiatric hospitals. This creates a supply-side failure where care cannot reach the local PHC/Barangay level, directly contradicting the spirit of the Philippine Mental Health Act.
+Over-Centralization of resources and services in psychiatric hospitals: Creates a supply-side failure where care cannot reach the local PHC/Barangay level, directly contradicting the spirit of the Philippine Mental Health Act.
     </div>
 
     <h4>Co-Creation Strategy for Cultural Humility</h4>
     <ul>
-        <li>**Harnessing Filipino Values:** Service design must be rooted in concepts like **KAPWA** (shared identity) and **BAYANIHAN** (communal support) to overcome deep-seated social **STIGMA**.</li>
-        <li>**Financial Leverage:** Recent massive funding increases (PHP 57M to 1B) must be leveraged to **decentralize** resources and invest in community-based PHC systems.</li>
+        <li><span class="icon">🤝</span> Harnessing Filipino Values: Service design must be rooted in concepts like KAPWA (shared identity) and BAYANIHAN (communal support) to overcome deep-seated social **STIGMA**.</li>
+        <li><span class="icon">💰</span> Financial Leverage: Recent massive funding increases (PHP 57M to 1B) must be leveraged to **decentralize** resources and invest in community-based PHC systems.</li>
     </ul>
 
     <hr style="border-top: 1px dashed var(--cognitio-purple); margin: 30px 0;">
 
-    <div class="chapter-title">Chapter 2: The Systems Thinking Blueprint</div>
+    <div class="chapter-title">The Systems Thinking Blueprint</div>
 
-    <h4>CHART 1: Identifying Core Feedback Loops (Complex Adaptive System - CAS)</h4>
+    <h4>Core Feedback Loops as Complex Adaptive System - CAS)</h4>
     <div class="chart-block">
-        <div class="chart-title">The Health Sector as a CAS: Focus on Vicious and Virtuous Cycles</div>
+        <div class="chart-title">The Health Sector as a CAS: Vicious and Virtuous Cycles</div>
         <div class="loop">
-            <strong>Negative (Stabilizing) Loop: Stigma-Isolation Trap</strong>
+            <strong>Stigma-Isolation Trap</strong>
+            <p>When societal stigma against mental illness is high, individuals are discouraged from seeking help, resulting in untreated conditions. These unaddressed cases remain hidden and often worsen, which in turn fuels the societal perception that mental illness is a dangerous or hidden problem, thus reinforcing the original stigma and completing the loop.</p>
             <img src="https://cognitioplus.aiwaapp.live/cache/media_cache/dcdc04f11e37a584d7a9968c60219fa7.png" alt="Stigma Isolation Trap Diagram">
         </div>
         <div class="loop">
-            <strong>Negative (Stabilizing) Loop: Workforce-Burnout Trap</strong>
+            <strong>Workforce-Burnout Trap</strong>
+            <p>The severe scarcity of licensed providers forces the few existing professionals to handle excessive caseloads. This leads directly to high rates of provider burnout and turnover. As providers leave the system, the overall workforce is further reduced, increasing the strain on those who remain and perpetuating the cycle of burnout.</p>
             <img src="https://cognitioplus.aiwaapp.live/cache/media_cache/73aa163b8547d776fabad92f166c6cad.png" alt="Workforce Burnout Trap Diagram">
         </div>
         <div class="loop">
-            <strong>Positive (Reinforcing) Loop: Data-Driven Improvement Engine</strong>
+            <strong>Data-Driven Improvement Engine</strong>
+            <p>The deployment of analytics and AI-powered solution creates a structured mechanism for gathering and analyzing real-time data on user behavior, service utilization, and outcomes. When these data inform the refinement of interventions, outcomes improve, leading to increased community trust and user adoption. Higher adoption then generates more robust data, further accelerating the capacity for evidence-based adaptation.</p>
             <img src="https://cognitioplus.aiwaapp.live/cache/media_cache/8d9ac228e5d3f0f67bd0e3bddf9a559f.png" alt="Data-Driven Improvement Engine Diagram">
         </div>
     </div>
@@ -295,46 +315,56 @@
     <div class="figure-grid" style="grid-template-columns: repeat(2, 1fr);">
         <div class="figure-block" style="border-color: var(--cognitio-gold);">
             <div class="figure-value" style="color: var(--cognitio-gold);">L1</div>
-            <div class="figure-label">Workforce **Task Shifting**</div>
-            <p style="font-size: 0.8em;">Train 500+ Community Paraprofessionals (Breaks Workforce Trap)</p>
+            <div class="figure-label">Workforce Task Shifting</div>
+            <p style="font-size: 0.8em;">Train and Certify 500+ Community Paraprofessionals (Breaks Workforce Trap)</p>
         </div>
         <div class="figure-block" style="border-color: var(--cognitio-gold);">
             <div class="figure-value" style="color: var(--cognitio-gold);">L2</div>
-            <div class="figure-label">Integrated **Information Flow**</div>
+            <div class="figure-label">Integrated Information Flow</div>
             <p style="font-size: 0.8em;">Secure EHR/PhilHealth Integration (Activates Improvement Engine)</p>
         </div>
     </div>
 
     <hr style="border-top: 1px dashed var(--cognitio-purple); margin: 30px 0;">
 
-    <div class="chapter-title">Chapter 3: Foundational Structural Pillars</div>
+    <div class="chapter-title">Foundational Structural Pillars</div>
 
     <h4>Required Structural Components</h4>
     <ul>
-        <li>**Standardized Tools:** Implementation of AI-powered self-assessment and screening for dynamic risk profiling at the community level.</li>
-        <li>**Capacity Building:** Rigorous training of community workers using WHO's mhGAP protocols.</li>
-        <li>**Seamless Navigation:** Establishing clear and simple patient referral pathways allowing transitions between digital tools, community workers, and specialized care.</li>
+        <li><span class="icon">🧠</span> AI-Powered Solutions: Implementation of AI-powered self-assessment and screening for dynamic risk profiling at the community level.</li>
+        <li><span class="icon">🧑‍🏫</span> Capacity Building: Massive training of community, school, and workplace-based mental health and well-being paraprofessionals</li>
+        <li><span class="icon">🗺️</span> Seamless Navigation: Establishing clear and simple patient referral pathways allowing transitions between digital tools, community workers, and specialized care.</li>
     </ul>
 
-    <h4>Cognitio+ Countermeasures to Systemic Barriers</h4>
+    <h4>Countermeasures to Systemic Barriers</h4>
     <div class="insight-box">
         <strong>Barrier:</strong> Cost Prohibitive Care / Financial Constraints
-        <p style="margin-left: 10px;">**Countermeasure:** Implement Tiered/Subsidized Pricing and B2G Contracts to cross-subsidize free basic services for low-income groups.</p>
+        <p style="margin-left: 10px;"><span class="icon">✅</span> Countermeasure: Implement Tiered/Subsidized Pricing and B2G Contracts to cross-subsidize free basic services for low-income groups.</p>
     </div>
     <div class="insight-box">
         <strong>Barrier:</strong> Digital Divide / Geographic Isolation (GIDA)
-        <p style="margin-left: 10px;">**Countermeasure:** Develop Offline-Enabled "Lite" Applications and leverage SMS/multi-platform support to reach geographically isolated and disadvantaged areas.</p>
+        <p style="margin-left: 10px;"><span class="icon">📱</span> Countermeasure: Develop Offline-Enabled "Lite" Applications and leverage SMS/multi-platform support to reach geographically isolated and disadvantaged areas.</p>
     </div>
 
     <div class="cta-section">
-        <h4>CALL TO ACTION: DRIVE SEAMLESS INTEGRATION NOW</h4>
-        <p style="font-size: 1.1em; margin-bottom: 20px;">The integration of mental health services requires immediate, systemic alignment and investment in decentralized, culturally responsive care.</p>
-        <p><strong>Action 1: Budget Re-Allocation:</strong> Re-channel mental health budget from centralized hospitals to LGU-led PHC capacity building.</p>
-        <p><strong>Action 2: Training Initiative:</strong> Immediately launch the task-shifting program to train 500+ Community Mental Health Paraprofessionals.</p>
-        <p><strong>Action 3: Policy Review:</strong> Convene stakeholders to mandate EHR integration for seamless patient data flow and claims processing.</p>
-        <a href="#" class="cta-button">Engage With The Full Systems Roadmap</a>
-    </div>
+        <h4>KEY ACTIONS: DRIVE SEAMLESS INTEGRATION NOW</h4>
+        <p style="font-size: 1.1em; margin-bottom: 20px;">Systemic alignment and investment in decentralized, culturally responsive care.</p>
+        
+        <div class="cta-action-point">
+            <span class="icon">🏛️</span> <strong>Action 1:</strong>Re-channel mental health budget from centralized hospitals to LGU-led PHC capacity building, and community level wellness hubs.
+        </div>
+        <div class="cta-action-point">
+            <span class="icon">🛠️</span> <strong>Action 2:</strong>Immediate launch the task-shifting program to train 500+ Mental Health and Well-Being Paraprofessionals.
+        </div>
+        <div class="cta-action-point">
+            <span class="icon">📜</span> <strong>Action 3:</strong> Convene stakeholders to mandate EHR integration for seamless patient data flow and claims processing.
+        </div>
 
+        <div class="cta-button-group">
+            <a href="#" class="cta-button">EXPLORE ACTUAL SOLUTIONS DEPLOYED</a>
+            <a href="https://cognitioplus.github.io/seamless-care/3LayerSolution.html" class="cta-button">EXPLORE 3-LAYER SOLUTION</a>
+        </div>
+    </div>
 </div>
 </body>
 </html>
